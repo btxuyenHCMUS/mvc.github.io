@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+</head>
+
+<body>
+    <div id="root">
+        <div class="row header">
+            <div class="column-medium box">
+            </div>
+            <div class="column-small box">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-small box scroll">
+                <div class="menu-card" onclick="loadImageToBox('content-box', './resources/img/dashboard.png')">
+                    <img src="./resources/img/dashboard.png" class="img-small" alt="img">
+                </div>
+                <div class="menu-card" onclick="loadContentToBox('content-box', Date())"></div>
+                <div class="menu-card" onclick="loadContentToBox('content-box', 'Bui Trong Xuyen')"></div>
+                <div class="menu-card"></div>
+            </div>
+
+            <div class="column-medium box scroll">
+                <div id="content-box"></div>
+            </div>
+
+            <div class="column-small box scroll">
+                <div class="card" onclick="window.open('https://www.google.com')">
+                    <i class="fab fa-google icon"></i>
+                </div>
+                <div class="card" onclick="window.open('https://www.facebook.com')">
+                    <i class="fab fa-facebook-f icon"></i>
+                </div>
+                <div class="card" onclick="window.open('https://www.twitter.com')">
+                    <i class="fab fa-twitter icon"></i>
+                </div>
+                <div class="card">
+                    <i class="fab fa-amazon icon"></i>
+                </div>
+                <div class="card">
+                    <i class="fab fa-apple icon"></i>
+                </div>
+                <div class="card">
+                    <i class="fas fa-at icon"></i>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bell icon"></i>
+                </div>
+            </div>
+        </div>
+        <a href="tel:0347790956" class="call-btn">
+            <i class="fas fa-phone-square call"></i>
+            <span class="call-number">034-779-0956</span>
+        </a>
+    </div>
+    <script>
+        function loadContentToBox(id, content) {
+            document.getElementById(id).innerHTML = content
+        }
+
+
+        function loadImageToBox(id, path) {
+            var content = "<img src='" + path + "' class='img-medium' alt='img'>"
+
+            document.getElementById(id).innerHTML = content
+        }
+    </script>
+</body>
+
+</html>

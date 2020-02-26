@@ -1,0 +1,179 @@
+
+/*-------------------------------*/
+/*-------DEFAULT SETUP*/
+/*-------------------------------*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    background-image: linear-gradient(45deg, rgba(2, 33, 64, 0.8) 55%, rgba(45, 95, 93, 0.85)), url("../img/back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*default is 16px*/
+}
+
+body {
+    overflow-x: hidden;
+}
+
+div {
+    display: block;
+}
+
+/*-------------------------------*/
+/*-------ROOT SETUP*/
+/*-------------------------------*/
+.header {
+    height: 18vh;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.header .column-medium {
+    float: left;
+    width: 58%;
+    height: 16vh;
+    margin-top: 1vh;
+    margin-top: 1vh;
+    margin-right: 1%;
+}
+
+.header .column-small {
+    float: left;
+    width: 40%;
+    height: 16vh;
+    margin-top: 1vh;
+    margin-top: 1vh;
+}
+
+.column-small {
+    float: left;
+    width: 16.5%;
+    height: 80vh;
+}
+
+.column-medium {
+    float: left;
+    width: 65%;
+    height: 80vh;
+    margin: auto;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #363636;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.menu-card {
+    width: 95%;
+    background-color: rgba(143, 140, 140, 0.5);
+    height: 250px;
+    border-radius: 5px;
+    margin: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.menu-card:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+    /* text-align: center;
+    vertical-align: middle; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 150px;
+    border-radius: 5px;
+    margin: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card .icon {
+    font-size: 500%;
+    color: firebrick;
+    /* position: relative; */
+    /* transform: translate(88%, 30%); */
+}
+
+.card:hover {
+    background-color: rgba(59, 59, 59, 0.5);
+}
+
+.scroll {
+    overflow-x: hidden; 
+    overflow-x: auto; 
+    text-align: justify;
+}
+
+/*-------------------------------*/
+/*-------FIXED SETUP*/
+/*-------------------------------*/
+.call-btn {
+    position: fixed;
+    bottom: 1%;
+    left: 18%;
+    color: sienna;
+    transition: all 0.1s;
+}
+
+.call-btn .call {
+    font-size: 400%;
+    transition: all 0.1s;
+}
+
+.call-btn .call-number {
+    visibility: hidden;
+    width: 200px;
+    background-color: sienna;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    transform: translate(0%, 120%);
+    transition: all 0.15s;
+    z-index: 1;
+}
+
+.call:hover {
+    transform: rotate(90deg) scale(1.2);
+}
+
+.call-btn:hover .call-number {
+    visibility: visible;
+}
+
+#content-box {
+    margin: 5px;
+    color: white;
+}
+
+.img-small {
+    position: relative;
+    width: 100%;
+}
+
+.img-medium {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
