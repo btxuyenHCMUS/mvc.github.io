@@ -1,5 +1,5 @@
-/*  Theme Name: Blogezy - Responsive Blog Template
-    Author: Zoyothemes
+/*  Theme Name: ABR Blog
+    Author: btxuyenhcmus
     Version: 1.0.0
     File Description:Main JS file of the template
 */
