@@ -4,6 +4,7 @@
     File Description: Main CSS file of the template
 */
 
+
 /********************
 *                   *
 *   1.Helper        *
@@ -128,7 +129,7 @@ h6 {
     top: 35px;
 }
 
-#sidebar-menu > ul > li > a {
+#sidebar-menu>ul>li>a {
     color: #000;
     display: block;
     padding: 14px 20px;
@@ -156,7 +157,7 @@ h6 {
     margin: 30px 0 0 0;
 }
 
-.nav-second-level > li > a {
+.nav-second-level>li>a {
     text-decoration: none !important;
 }
 
@@ -194,7 +195,6 @@ textarea {
     position: absolute;
 }
 
-
 .copyright-box {
     text-align: center;
     margin-top: 30%;
@@ -218,6 +218,7 @@ body.enlarged .side-menu {
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
 }
 
+
 /*===========================
     3.BLOG
 ============================*/
@@ -232,7 +233,7 @@ body.enlarged .side-menu {
     margin: 0 0 45px;
 }
 
-.post + .post {
+.post+.post {
     border-top: 1px solid rgba(238, 238, 238, .7);
     padding-top: 50px;
 }
@@ -271,13 +272,13 @@ body.enlarged .side-menu {
     font-weight: 600;
 }
 
-.post-meta > li {
+.post-meta>li {
     display: inline-block;
     margin-right: 30px;
     font-size: 14px;
 }
 
-.post-meta > li:last-child {
+.post-meta>li:last-child {
     margin-right: 0;
 }
 
@@ -453,7 +454,9 @@ body.enlarged .side-menu {
     margin-right: 5px;
 }
 
+
 /* About Widget */
+
 .about-widget img {
     margin-bottom: 20px;
     max-width: 100%;
@@ -461,8 +464,8 @@ body.enlarged .side-menu {
     height: auto;
 }
 
-.about-widget p{
-    line-height: 24px;  
+.about-widget p {
+    line-height: 24px;
 }
 
 .post-date {
@@ -470,7 +473,7 @@ body.enlarged .side-menu {
     opacity: .7;
 }
 
-.tagcloud > a {
+.tagcloud>a {
     background: #f5f5f5;
     border-radius: 2px;
     color: #303133;
@@ -484,7 +487,7 @@ body.enlarged .side-menu {
     transition: all 0.5s;
 }
 
-.tagcloud > a:hover {
+.tagcloud>a:hover {
     color: #fff;
 }
 
@@ -765,13 +768,13 @@ textarea.form-control {
     4.Pagination
 =======================*/
 
-.pagination > li {
+.pagination>li {
     display: inline-block;
     margin-right: 2px;
 }
 
-.pagination > li:first-child > a,
-.pagination > li:first-child > span {
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
     border-radius: 3px;
 }
 
@@ -779,8 +782,8 @@ textarea.form-control {
     display: inline-block;
 }
 
-.pagination > li > a,
-.pagination > li > span {
+.pagination>li>a,
+.pagination>li>span {
     border: 2px solid #eeeeee;
     border-radius: 3px;
     color: #777777;
@@ -790,34 +793,35 @@ textarea.form-control {
     transition: all 0.5s;
 }
 
-.pagination > .active > a,
-.pagination > .active > span {
+.pagination>.active>a,
+.pagination>.active>span {
     background: #27cbc0 none repeat scroll 0 0;
     border-color: #27cbc0;
     color: #ffffff;
 }
 
-.pagination > li > a:hover,
-.pagination > li > a:focus,
-.pagination > li > span:hover,
-.pagination > li > span:focus {
+.pagination>li>a:hover,
+.pagination>li>a:focus,
+.pagination>li>span:hover,
+.pagination>li>span:focus {
     background: #666 none repeat scroll 0 0;
     border-color: #666;
     color: #ffffff;
 }
 
-.pagination > .active > a,
-.pagination > .active > a:focus,
-.pagination > .active > a:hover,
-.pagination > .active > span,
-.pagination > .active > span:focus,
-.pagination > .active > span:hover {
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
     background-color: #666;
     border-color: #666;
     color: #fff;
     cursor: default;
     z-index: 3;
 }
+
 
 /*======================
     5.Responsive
@@ -852,19 +856,20 @@ textarea.form-control {
     .topbar-mobile {
         display: block;
     }
-    .pagination > li > a, .pagination > li > span {
+    .pagination>li>a,
+    .pagination>li>span {
         padding: 5px 10px;
     }
 }
 
 @media (max-width: 767px) {
-    .media img{
+    .media img {
         height: 45px;
         width: 45px;
     }
 }
 
-@media (max-width: 419px){
+@media (max-width: 419px) {
     .topbar-mobile .logo {
         padding: 20px 20px;
     }

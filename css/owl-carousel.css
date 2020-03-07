@@ -541,33 +541,48 @@
     animation-name: fadeOutLeft;
 }
 
+.container .owl-nav {
+    padding: 0 20px
+}
 
-.container .owl-nav{padding:0 20px}
-.owl-carousel:hover .owl-nav{opacity:1}
-.owl-nav > div{
-    background:rgba(0, 0, 0, 0.6);
-    color:transparent;
-    float:left;
-    height:50px;
-    margin-top:-25px;
-    position:relative;
-    width:50px;
-    opacity:0.5;
+.owl-carousel:hover .owl-nav {
+    opacity: 1
+}
+
+.owl-nav>div {
+    background: rgba(0, 0, 0, 0.6);
+    color: transparent;
+    float: left;
+    height: 50px;
+    margin-top: -25px;
+    position: relative;
+    width: 50px;
+    opacity: 0.5;
     border-radius: 50%;
 }
-.owl-nav > div:hover{opacity:1}
-.owl-nav > div.owl-next{float:right}
-.owl-nav > div:before{
-    color:#fff;
-    content:"\F141";
-    font-family:"Material Design Icons";
-    font-size:25px;
-    height:100%;
-    left:0;
-    line-height:52px;
-    position:absolute;
-    text-align:center;
-    top:0;
-    width:100%;
+
+.owl-nav>div:hover {
+    opacity: 1
 }
-.owl-nav > div.owl-next:before{content: "\F142";}
+
+.owl-nav>div.owl-next {
+    float: right
+}
+
+.owl-nav>div:before {
+    color: #fff;
+    content: "\F141";
+    font-family: "Material Design Icons";
+    font-size: 25px;
+    height: 100%;
+    left: 0;
+    line-height: 52px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+.owl-nav>div.owl-next:before {
+    content: "\F142";
+}

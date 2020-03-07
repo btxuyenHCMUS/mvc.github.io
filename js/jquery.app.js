@@ -14,7 +14,7 @@
 
     function initLeftMenuCollapse() {
         // Left menu collapse
-        $('.button-menu-mobile').on('click', function (event) {
+        $('.button-menu-mobile').on('click', function(event) {
             event.preventDefault();
             $("body").toggleClass("enlarged");
         });
@@ -27,5 +27,3 @@
     init();
 
 })(jQuery)
-
-
