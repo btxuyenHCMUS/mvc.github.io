@@ -16,7 +16,10 @@
 *********************/
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: PublicoText-Roman-Web, Georgia, Cambria, "Times New Roman", Times, serif;
+    word-spacing: 1.5px;
+    font-size: 150%;
     margin: 35px;
     background-color: #f0f4f7;
 }
