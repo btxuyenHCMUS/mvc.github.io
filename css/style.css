@@ -547,16 +547,17 @@ body.enlarged .side-menu {
 .socials li a {
     display: inline-block;
     margin-top: 0px;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    font-size: 15px;
+    width: 56px;
+    height: 56px;
+    line-height: 54px;
+    font-size: 24px;
     transition: all 0.5s;
     /* background-color: #4a4a4a; */
-    background-color: #4c6ef5 !important;
+    background-color: white !important;
     border-radius: 50%;
     /* color: #fff !important; */
-    color: #fff !important;
+    color: #000 !important;
+    border: 1px solid black;
 }
 
 .form-control {
