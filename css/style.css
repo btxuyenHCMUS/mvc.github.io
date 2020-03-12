@@ -564,8 +564,8 @@ body.enlarged .side-menu {
     background-color: white !important;
     border-radius: 50%;
     /* color: #fff !important; */
-    color: #000 !important;
-    border: 1px solid black;
+    color: #0084ff !important;
+    border: 1px solid #0084ff;
 }
 
 .socials li a:hover {
