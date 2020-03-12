@@ -897,16 +897,31 @@ textarea.form-control {
 
 /* Extended */
 
+@keyframes ring {
+    0% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
 .fb-livechat,
 .fb-widget {
-    display: none
+    display: none;
 }
 
 .ctrlq.fb-button,
 .ctrlq.fb-close {
     position: fixed;
     right: 50px;
-    cursor: pointer
+    cursor: pointer;
+    animation-name: ring;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 
 .ctrlq.fb-button {
