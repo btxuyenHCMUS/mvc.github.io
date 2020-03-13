@@ -19,7 +19,7 @@ const createCORSRequest = (method, url) => {
 }
 
 const request = createCORSRequest('GET',
-    'https://dc.vietstock.vn/api/CMSNews/GetTopViewedStock?topCount=10');
+    'https://dc.vietstock.vn/api/CMSNews/GetTopViewedindex?topCount=5');
 if (!request) {
     throw new Error('CORS is not supported');
 }

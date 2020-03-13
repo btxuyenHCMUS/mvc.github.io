@@ -1012,3 +1012,25 @@ textarea.form-control {
     content: 'x';
     font-family: sans-serif
 }
+
+
+/* .stockbar-frame {
+    display: block;
+    width: 500px;
+    overflow-x: scroll;
+} */
+
+ul.stockbar li {
+    display: inline-block;
+    /* height: 47px; */
+    width: 195px;
+    background-color: #0f2438;
+}
+
+li .stock-box {
+    color: white;
+}
+
+li .stock-box i {
+    font-size: 190%;
+}
