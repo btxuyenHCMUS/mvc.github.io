@@ -1020,17 +1020,38 @@ textarea.form-control {
     overflow-x: scroll;
 } */
 
+ul.stockbar {
+    padding-inline-start: 0px;
+    background-color: #0f2438;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    margin-left: 16px;
+}
+
 ul.stockbar li {
     display: inline-block;
     /* height: 47px; */
-    width: 195px;
-    background-color: #0f2438;
+    width: 170px;
 }
 
 li .stock-box {
     color: white;
+    padding-left: 6px;
 }
 
 li .stock-box i {
     font-size: 190%;
+}
+
+li .stock-box>span {
+    font-weight: bold;
+}
+
+.stock-box .info-bar {
+    text-align: right;
+    font-size: 75%;
+}
+
+.info-bar>span {
+    padding-left: 10px;
 }
