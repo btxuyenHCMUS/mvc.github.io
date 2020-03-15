@@ -1031,7 +1031,7 @@ ul.stockbar {
 ul.stockbar li {
     display: inline-block;
     /* height: 47px; */
-    width: 170px;
+    width: 180px;
 }
 
 li .stock-box {

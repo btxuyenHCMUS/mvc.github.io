@@ -27,15 +27,109 @@ if (!request) {
 request.onload = () => {
     var data = JSON.parse(request.responseText);
     console.log(data);
-    // document.getElementById('popular-1').innerHTML = " \
-    //     <div class='wi'>\
-    //         <a href='index.html'><img src='images/works/img1.jpg' alt='' class='img-fluid'></a> \
-    //     </div> \
-    //     <div class='wb'><a href='#'>" + data['title'] + "</a> \
-    //         <span class='post-date'>Jun 15, 2019</span></div>"
+    if (data[0]['ColorId'] == -1) {
+        document.getElementById('stock-box-1').innerHTML = " \
+            <i class='mdi mdi-arrow-down-drop-circle-outline' style='color: red;'></i> \
+            <span>" + data[0]['IndexName'] + "</span>" + " \
+            <img src='" + data[0]['UrlImage'] + "' alt=''> \
+            <div class='info-bar'> \
+                <span style='font-weight: bold;'>" + data[0]['LastPrice'] + "</span> \
+                <span style='color: red;'>" + data[0]['Change'] + "</span> \
+                <span style='color: red;'>" + data[0]['PerChange'] + "%</span>"
+    } else {
+        document.getElementById('stock-box-1').innerHTML = " \
+            <i class='mdi mdi-arrow-up-drop-circle-outline' style='color: greenyellow;'></i> \
+            <span>" + data[0]['IndexName'] + "</span>" + " \
+            <img src='" + data[0]['UrlImage'] + "' alt=''> \
+            <div class='info-bar'> \
+                <span style='font-weight: bold;'>" + data[0]['LastPrice'] + "</span> \
+                <span style='color: greenyellow;'>" + data[0]['Change'] + "</span> \
+                <span style='color: greenyellow;'>" + data[0]['PerChange'] + "%</span>"
+    }
+
+    if (data[1]['ColorId'] == -1) {
+        document.getElementById('stock-box-2').innerHTML = " \
+            <i class='mdi mdi-arrow-down-drop-circle-outline' style='color: red;'></i> \
+            <span>" + data[1]['IndexName'] + "</span>" + " \
+            <img src='" + data[1]['UrlImage'] + "' alt=''> \
+            <div class='info-bar'> \
+                <span style='font-weight: bold;'>" + data[1]['LastPrice'] + "</span> \
+                <span style='color: red;'>" + data[1]['Change'] + "</span> \
+                <span style='color: red;'>" + data[1]['PerChange'] + "%</span>"
+    } else {
+        document.getElementById('stock-box-2').innerHTML = " \
+            <i class='mdi mdi-arrow-up-drop-circle-outline' style='color: greenyellow;'></i> \
+            <span>" + data[1]['IndexName'] + "</span>" + " \
+            <img src='" + data[1]['UrlImage'] + "' alt=''> \
+            <div class='info-bar'> \
+                <span style='font-weight: bold;'>" + data[1]['LastPrice'] + "</span> \
+                <span style='color: greenyellow;'>" + data[1]['Change'] + "</span> \
+                <span style='color: greenyellow;'>" + data[1]['PerChange'] + "%</span>"
+    }
+
+    if (data[2]['ColorId'] == -1) {
+        document.getElementById('stock-box-3').innerHTML = " \
+            <i class='mdi mdi-arrow-down-drop-circle-outline' style='color: red;'></i> \
+            <span>" + data[2]['IndexName'] + "</span>" + " \
+            <img src='" + data[2]['UrlImage'] + "' alt=''> \
+            <div class='info-bar'> \
+                <span style='font-weight: bold;'>" + data[2]['LastPrice'] + "</span> \
+                <span style='color: red;'>" + data[2]['Change'] + "</span> \
+                <span style='color: red;'>" + data[2]['PerChange'] + "%</span>"
+    } else {
+        document.getElementById('stock-box-3').innerHTML = " \
+            <i class='mdi mdi-arrow-up-drop-circle-outline' style='color: greenyellow;'></i> \
+            <span>" + data[2]['IndexName'] + "</span>" + " \
+            <img src='" + data[2]['UrlImage'] + "' alt=''> \
+            <div class='info-bar'> \
+                <span style='font-weight: bold;'>" + data[2]['LastPrice'] + "</span> \
+                <span style='color: greenyellow;'>" + data[2]['Change'] + "</span> \
+                <span style='color: greenyellow;'>" + data[2]['PerChange'] + "%</span>"
+    }
+
+    if (data[3]['ColorId'] == -1) {
+        document.getElementById('stock-box-4').innerHTML = " \
+            <i class='mdi mdi-arrow-down-drop-circle-outline' style='color: red;'></i> \
+            <span>" + data[3]['IndexName'] + "</span>" + " \
+            <img src='" + data[3]['UrlImage'] + "' alt=''> \
+            <div class='info-bar'> \
+                <span style='font-weight: bold;'>" + data[3]['LastPrice'] + "</span> \
+                <span style='color: red;'>" + data[3]['Change'] + "</span> \
+                <span style='color: red;'>" + data[3]['PerChange'] + "%</span>"
+    } else {
+        document.getElementById('stock-box-4').innerHTML = " \
+            <i class='mdi mdi-arrow-up-drop-circle-outline' style='color: greenyellow;'></i> \
+            <span>" + data[3]['IndexName'] + "</span>" + " \
+            <img src='" + data[3]['UrlImage'] + "' alt=''> \
+            <div class='info-bar'> \
+                <span style='font-weight: bold;'>" + data[3]['LastPrice'] + "</span> \
+                <span style='color: greenyellow;'>" + data[3]['Change'] + "</span> \
+                <span style='color: greenyellow;'>" + data[3]['PerChange'] + "%</span>"
+    }
+
+    if (data[4]['ColorId'] == -1) {
+        document.getElementById('stock-box-5').innerHTML = " \
+            <i class='mdi mdi-arrow-down-drop-circle-outline' style='color: red;'></i> \
+            <span>" + data[4]['IndexName'] + "</span>" + " \
+            <img src='" + data[4]['UrlImage'] + "' alt=''> \
+            <div class='info-bar'> \
+                <span style='font-weight: bold;'>" + data[4]['LastPrice'] + "</span> \
+                <span style='color: red;'>" + data[4]['Change'] + "</span> \
+                <span style='color: red;'>" + data[4]['PerChange'] + "%</span>"
+    } else {
+        document.getElementById('stock-box-5').innerHTML = " \
+            <i class='mdi mdi-arrow-up-drop-circle-outline' style='color: greenyellow;'></i> \
+            <span>" + data[4]['IndexName'] + "</span>" + " \
+            <img src='" + data[4]['UrlImage'] + "' alt=''> \
+            <div class='info-bar'> \
+                <span style='font-weight: bold;'>" + data[4]['LastPrice'] + "</span> \
+                <span style='color: greenyellow;'>" + data[4]['Change'] + "</span> \
+                <span style='color: greenyellow;'>" + data[4]['PerChange'] + "%</span>"
+    }
 }
 request.onerror = () => {
     console.log('Error');
+    document.getElementById('stock-frame').innerHTML = '';
 }
 
 request.send();
