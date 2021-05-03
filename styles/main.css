@@ -2166,6 +2166,10 @@ fieldset[disabled] .btn-neutral.active {
     padding: 10px 22px;
 }
 
+.btn.btn-default.btn-round:hover {
+    background-color: blue;
+}
+
 .btn-simple {
     border: 1px solid;
     border-color: #888;
